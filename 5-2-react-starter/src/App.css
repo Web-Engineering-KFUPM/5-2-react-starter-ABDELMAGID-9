@@ -45,3 +45,37 @@
 }
 
 /* Add your custom styles below */
+.student-card {
+  background: #fff;
+  color: #111827;                
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.student-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;              
+}
+
+.student-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #334155;              
+}
+
+@media (max-width: 640px) {
+  .student-card {
+    width: 100%;
+  }
+}
